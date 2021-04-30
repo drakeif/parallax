@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="img/bg.jpg" alt="bg" id="bg">
+        <img src="img/moon.png" alt="moon" id="moon">
+        <img src="img/mountain.png" alt="mountain" id="mountain">
+        <img src="img/road.png" alt="road" id="road">
+
+        <h2 id="text">Moon Light</h2>
+    </div>
+
+    <div class="about">
+        <h3 class="h3">Parallax Scroll</h3>
+        <p class="describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate numquam velit ratione excepturi consectetur. Sed itaque quibusdam accusantium consectetur fugit impedit saepe id officia tenetur recusandae animi repellendus, quidem distinctio?
+            Perferendis, placeat quia ipsa, rem cupiditate officiis maiores facere ex quo fuga expedita consequuntur in tempora labore autem et veniam odit sint natus quam id corrupti adipisci? Doloremque, sequi voluptatum.
+            Ducimus cum repellendus corrupti earum alias magnam doloremque, asperiores consectetur quis possimus deserunt aliquam repellat eius nisi vel sunt laborum, natus amet? Deserunt vitae quidem ex ipsum voluptates tempore voluptas!
+            Veritatis laudantium aliquid rem ab ullam provident voluptates nihil, esse minus corrupti reiciendis repellendus consequuntur libero id sunt at a sequi ducimus nemo dicta hic enim! Omnis vitae explicabo nobis!
+            Aspernatur, hic modi? Ratione ipsa et at, blanditiis odio cumque fugit rerum quo neque incidunt dolorem enim? Rerum facilis dignissimos deleniti enim. Quidem, voluptate! Eum soluta excepturi nobis dolore quae.
+            Non blanditiis optio odio quia provident ea! Aut nulla tempora praesentium repellendus omnis ipsa tempore recusandae, reprehenderit molestias quia mollitia sed eos quibusdam laborum culpa, cumque ipsum distinctio aliquid expedita?
+            Sit corrupti reprehenderit enim ipsam animi modi magnam delectus nobis obcaecati illum! Consequuntur recusandae velit nostrum laudantium harum facere maiores sapiente illum illo itaque dicta asperiores quod accusantium, enim saepe.
+            Distinctio, maiores cumque. Optio dolorum dolorem magnam, distinctio temporibus fugit porro tenetur maxime, inventore, et eos modi exercitationem aliquid suscipit ratione voluptatibus deserunt repellat dolor autem neque officia ipsum nobis?
+            Fugiat cupiditate pariatur illum praesentium earum soluta alias corrupti est omnis, error inventore iusto provident dicta possimus totam nesciunt eos unde similique dolores tempore. Saepe consequuntur asperiores similique minus distinctio.
+            Inventore accusamus magnam amet itaque iure dolore pariatur! Ipsum perferendis voluptatibus cupiditate delectus explicabo blanditiis vel quaerat totam quibusdam quam odio veritatis ex assumenda laboriosam quod commodi, saepe deserunt velit.
+        </p>
+    </div>
+    <!-- PARALAX.JS -->
+    <div class="parallax">
+        <div class="parallax__block scene" id="scene">
+            <div>
+                <img src="./img/phone.png" alt="phone">
+            </div>
+            <div data-depth="0.8" class="layer" >
+                <img src="./img/item-1.png" alt="item-1">
+            </div>
+            <div data-depth="1.0" class="layer">
+                <img src="./img/item-2.png" alt="item-2">
+            </div>
+            <div data-depth="0.5" class="layer">
+                <img src="./img/item-3.png" alt="item-3">
+            </div>    
+        </div>
+    </div>
+  
+    <script src="js/parallax.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

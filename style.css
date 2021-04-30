@@ -1,0 +1,106 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0a2a43;
+    min-height: 1500px;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    min-width: 50px;
+    height: auto;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10;
+}
+.wrapper::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  #0a2a43;
+    mix-blend-mode: color;
+    z-index: 11;
+}
+.wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#text {
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    z-index: 1;
+}
+#road {
+    z-index: 2;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h3 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+.describe {
+    width: 75%;
+    color: #fff;
+    font-size: 2em;
+    text-align: justify;
+}
+.parallax {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    min-height: 637px;
+}
+.parallax__block {
+    position: relative;
+}
+.parallax__block div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.parallax__block div:nth-child(2) {
+  padding: 50px 0 0 500px;
+}
+.parallax__block div:nth-child(3) {
+ padding: 200px 0 0 0;
+}
+.parallax__block div:nth-child(4) {
+    padding: 400px 0 0 400px;
+}
